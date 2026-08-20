@@ -152,8 +152,8 @@ for col in df_consolidado.columns:
     print(f"  ✅ Coluna '{col}' convertida para string")
 
 # ===================== Buscar ID da planilha no Google Drive =====================
-folder_id = "18gmNsGXyzgRlrN3iC7go9oHqp0Q3kzOx"
-sheet_name = "Financeiro_contas_a_pagar_Quintoserv"
+folder_id = "1Q8h3ZD8BumJworR00Z0iQc74nqWsS0JP"
+sheet_name = "Financeiro_contas_a_pagar_Praia"
 
 query = f"name='{sheet_name}' and mimeType='application/vnd.google-apps.spreadsheet' and '{folder_id}' in parents and trashed=false"
 results = drive_service.files().list(q=query, spaces='drive', fields="files(id, name)").execute()
